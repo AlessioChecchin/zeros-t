@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  word-break: break-all;
+}
+body,
+html {
+  height: 100%;
+  background-color: #111111;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  background-color: #1c0000;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(100, 0, 200, 0.5)),
+    url("./Images/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+}
+
+input {
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: rgba(134, 92, 175, 0.5);
+  border: 1px solid white;
+  height: 5vh;
+  font-size: 1.1rem;
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+input[type="text"] {
+  padding: 1%;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.App {
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.Title{
+  font-size: 2rem;
+  margin: 1%;
+}
+
+.Form-Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.AB-Container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Limit {
+  width: 24%;
+  margin-top: 2%;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.Function-Container {
+  width: 50%;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.Y {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Function {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+.Function input {
+  width: 100%;
+}
+
+.Button-Container {
+  width: 100%;
+}
+
+.Button-Container input[type="button"] {
+  width: 25%;
+  cursor: pointer;
+}
+
+.Best-Case {
+  margin-top: 5vh;
+  font-size: 2rem;
+}
+
+.Error-Container {
+  font-size: 2rem;
+  color: red;
+}
+
+.Visible{
+  display: block;
+}
+
+.Hidden{
+  display: none;
+}
+
+.Data-Visualization{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  margin-bottom: 5vh;
+}
+
+.Chart-Container{
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Chart {
+  width: 90%;
+}
+
+.Computation-Container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Computation-Result{
+  width: 30vw;
+  height: 30vw;
+  overflow-y: auto;
+}
+
+.Computation-Table{
+  width: 100%;
+  height: 100%;
+  
+  background-color: #2C2F33;
+  text-align: left;
+  display: table;
+
+  overflow-y: scroll;
+}
+
+.Line {
+  display: table-row;
+}
+.Cell{
+  width: calc(100% / 3);
+  display: table-cell;
+  padding: 1%;
+  text-align: center;
+  border: 1px solid purple;
+}
+
+@media only screen and (max-width: 850px) {
+  .AB-Container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Limit {
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .Function-Container {
+    width: 82%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  
+  .Button-Container input[type="button"] {
+    width: 82%;
+    cursor: pointer;
+  }
+  
+  
+  .Data-Visualization{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+  .Chart-Container{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Chart {
+    width: 90%;
+  }
+  
+  .Computation-Container {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Computation-Result{
+    width: 60vw;
+    height: 60vw;
+    overflow-y: auto;
+  }
+  
+  .Computation-Table{
+    width: 100%;
+    height: 100%;
+    
+    background-color: #2C2F33;
+    text-align: left;
+    display: table;
+  
+    overflow-y: scroll;
+  }
+  
+  .Line {
+    display: table-row;
+  }
+  .Cell{
+    width: calc(100% / 3);
+    display: table-cell;
+    padding: 1%;
+    text-align: center;
+    border: 1px solid purple;
+  }
+}
